@@ -40,15 +40,20 @@
          -->
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Yammi" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0" FontFamily="Portable User Interface" FontSize="64"/>
-            <TextBlock Text="Food" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontFamily="Portable User Interface" FontSize="48"/>
-        </StackPanel>
+
+        <!--TitlePanel contains the name of the application and page title-->
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image HorizontalAlignment="Left" Height="100" Margin="103,10,0,0" VerticalAlignment="Top" Width="71" Source="/Assets/Tiles/IconicTileSmall.png" Stretch="None" Tap="ss"/>
+        <Grid x:Name="ContentPanel" Margin="0,0,0,2" Grid.RowSpan="2" Width="480" Height="800">
+            <Image HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="480" Stretch="UniformToFill" Source="/Assets/Tiles/Comida/mockup.png"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="212" Margin="246,277,0,0" Stroke="Black" VerticalAlignment="Top" Width="210" Opacity="0" Tap="irAMelon"/>
         </Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="212" Margin="23,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="210" Grid.Row="1" Opacity="0" Tap="irASandia"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="212" Margin="23,277,0,0" Stroke="Black" VerticalAlignment="Top" Width="210" Opacity="0" Tap="irATomate"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="212" Margin="249,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="210" Grid.Row="1" Opacity="0" Tap="irAPalta"/>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
             aligned on common boundaries.  The image has a top margin of -32px to

@@ -1,0 +1,48 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:es="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing"
+    x:Class="Version1.Page1"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Height="800">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28"/>
+        <Image HorizontalAlignment="Left" Height="800" Margin="0" VerticalAlignment="Top" Width="480" Source="mockuptomate.png" Stretch="UniformToFill"/>
+        <Grid Margin="100,465,25,55">
+        	<TextBlock HorizontalAlignment="Left" Height="60" TextWrapping="Wrap" VerticalAlignment="Top" Width="355" FontFamily="Segoe UI" FontSize="20">
+        		<Run Text="No se puede"/>
+        		<Run Text=" definir"/>
+        		<Run Text=" por el aroma."/>
+        	</TextBlock>
+        	<TextBlock HorizontalAlignment="Left" Height="60" Margin="0,145,0,0" TextWrapping="Wrap" Text="Firme pero no duro, la piel suave y brillante, sin arrugas ni marcas." VerticalAlignment="Top" Width="355" FontFamily="Segoe UI" FontSize="20"/>
+        	<TextBlock HorizontalAlignment="Left" Height="60" Margin="0,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="355" FontFamily="Segoe UI" FontSize="20">
+        		<Run Text="No se puede "/>
+        		<Run Text="definir "/>
+        		<Run Text="por "/>
+        		<Run Text="audición"/>
+        		<Run Text="."/>
+        	</TextBlock>
+        	<TextBlock HorizontalAlignment="Left" Height="60" Margin="0,220,0,0" TextWrapping="Wrap" Text="Toma 2 semanas en madurar y dura 4 días maduro. " VerticalAlignment="Top" Width="355" FontFamily="Segoe UI"/>
+
+        </Grid>
+
+        <!--ContentPanel - place additional content here-->
+    </Grid>
+
+</phone:PhoneApplicationPage>
